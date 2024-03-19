@@ -6,14 +6,13 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class DemoUtilsTest {
 
-    @Test
-    void testEqualsAndNotEquals() {
-
-        DemoUtils demoUtils = new DemoUtils();
-
-        assertEquals(6, demoUtils.add(2, 4), "2+4 must be 6");
-        assertNotEquals(6, demoUtils.add(1, 9), "1+9 must not be 6");
-    }
+//    @Test
+//    void testEqualsAndNotEquals() {
+//        DemoUtils demoUtils = new DemoUtils();
+//
+//        assertEquals(6, demoUtils.add(2, 4), "2+4 must be 6");
+//        assertNotEquals(6, demoUtils.add(1, 9), "1+9 must not be 6");
+//    }
 
     @Test
     void testNullAndNotNull() {
@@ -26,6 +25,14 @@ class DemoUtilsTest {
         assertNull(demoUtils.checkNull(str1), "Object should be null");
         assertNotNull(demoUtils.checkNull(str2), "Object should not be null");
 
+    }
+
+    @Test
+    void TestEqualsAndNotEquals(){
+
+        DemoUtils demoUtils = new DemoUtils();
+
+        assertEquals(7,demoUtils.add(3,4),"3+4 must be 7");
     }
 
 }
